@@ -1,0 +1,43 @@
+Rodar isso antes de começar o trabalho pela primeira vez
+
+git init - iniciando o processo git
+
+git status - verificar o status dos arquivos
+
+Aqui está untracked
+
+Isso rode ao iniciar o projeto
+	git config --global user.email "ras22_9@hotmail.com" - configurando um autor para comitar a pasta(global é para a pasta toda)
+
+	git config --global user.name ras22_9 - configurando um codenome
+
+Assim que os arquivo estiverem prontos para subir ao github rode os comando abaixo:
+
+aqui está unmodfied ou modfied (working directory)
+
+git add * - pega todos os arquivos da pasta para poder enviar ao github
+
+aqui está staged (staging area)
+
+git commit -m "Texto do versionamento" - Envia os arquivos
+
+aqui está unmodfied (local repository)
+
+Ao final irá aparecer algo como abaixo:
+	[master (root-commit) 5870db1] commit inicial - (5870db1, inicio dos caracteres criptografados)(commit inicial, texto do versionamento)
+	1 file changed, 30 insertions(+) - Quantidade de arquivos enviados
+	create mode 100644 strogonoff.md - Nome do arquivo arquivo enviado
+
+
+
+git config --list - mostra todos os comandos configurados no git
+
+git config --global --unset parametro - apaga o parametro informado, exemplo:
+	git config --global user.email
+	
+git remote add origin link_do_github - criando um apelido chamado origin para o link
+
+git remote -v - verificar os seus links configurados
+
+git push origin master - enviando os arquivos para o github na brench master
+
